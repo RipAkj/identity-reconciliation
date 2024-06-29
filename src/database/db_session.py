@@ -1,5 +1,6 @@
 from peewee import *
+from env import *
 db_state_default = {"closed": None, "conn": None, "ctx": None, "transactions": None}
-db = PostgresqlDatabase('postgres', host='localhost', port=5433, user='postgres', password='1234')
+db = PostgresqlDatabase(database=DATABASE_NAME, host=DATABASE_HOST, port=DATABASE_PORT, user=DATABASE_USER, password=DATABASE_PASSWORD)
 db.connect()
 

@@ -28,4 +28,4 @@ app.include_router(
     tags=["contact"],
     dependencies=[Depends(get_db)],
 )
-# create_tables()
+create_tables()
