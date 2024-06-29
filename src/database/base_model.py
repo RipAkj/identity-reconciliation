@@ -1,5 +1,5 @@
 from playhouse.signals import Model
-from database.db_session import db
+from src.database.db_session import db
 from playhouse.shortcuts import ThreadSafeDatabaseMetadata
 
 class BaseModel(Model):

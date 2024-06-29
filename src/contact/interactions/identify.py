@@ -1,8 +1,8 @@
-from contact.models.contact import Contact
+from src.contact.models.contact import Contact
 from fastapi import HTTPException
-from contact.interactions.create_contact import create_contact
-from libs.enums import LinkPrecedenceType
-from contact.params.contact_params import IdentifyResponse, ContactResponse
+from src.contact.interactions.create_contact import create_contact
+from src.libs.enums import LinkPrecedenceType
+from src.contact.params.contact_params import IdentifyResponse, ContactResponse
 from fastapi.encoders import jsonable_encoder
 
 def identify(request):

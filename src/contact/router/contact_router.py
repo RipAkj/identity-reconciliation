@@ -2,9 +2,9 @@ from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, status, Request, Query
 from fastapi.responses import JSONResponse, ORJSONResponse
 from fastapi.encoders import jsonable_encoder
-from contact.params.contact_params import *
-from contact.interactions.create_contact import create_contact
-from contact.interactions.identify import identify
+from src.contact.params.contact_params import *
+from src.contact.interactions.create_contact import create_contact
+from src.contact.interactions.identify import identify
 from traceback import format_exc
 contact_router = APIRouter()
 

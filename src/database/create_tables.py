@@ -1,5 +1,5 @@
-from database.db_session import db
-from contact.models.contact import Contact
+from src.database.db_session import db
+from src.contact.models.contact import Contact
 
 def create_tables():
     try:

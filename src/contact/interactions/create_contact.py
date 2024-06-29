@@ -1,5 +1,5 @@
-from contact.models.contact import Contact
-from libs.enums import LinkPrecedenceType
+from src.contact.models.contact import Contact
+from src.libs.enums import LinkPrecedenceType
 
 def create_contact(request):
     new_contact = Contact.create(

@@ -1,6 +1,6 @@
 import time
 from fastapi import Depends
-from database.db_session import db_state_default, db
+from src.database.db_session import db_state_default, db
 
 
 async def reset_db_state():

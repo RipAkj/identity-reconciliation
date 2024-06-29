@@ -1,6 +1,6 @@
 from datetime import datetime
-from libs.enums import LinkPrecedenceType
-from database.base_model import BaseModel
+from src.libs.enums import LinkPrecedenceType
+from src.database.base_model import BaseModel
 from playhouse.postgres_ext import (
     BigAutoField,
     CharField,
